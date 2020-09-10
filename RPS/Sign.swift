@@ -36,7 +36,7 @@ enum Sign {
             case .rock:
                 return "👊"
             case .paper:
-                return "🤚"
+                return "🖐"
             case .scissors:
                 return "✌️"
         }
@@ -45,12 +45,31 @@ enum Sign {
     func opponentsTurn(opponentSign: Sign) -> GameState {
         // compare user to computer and return if user won or lost
         
-        if self == .rock && opponentSign == .paper {
-            return GameState.lost
-        } else if self == .rock && opponentSign == .scissors {
-            return GameState.win
-        } else {
+        if self == opponentSign {
             return GameState.draw
+        } else {
+            switch self {
+            case .rock:
+                if opponentSign == .paper {
+                    return GameState.lost
+                } else {
+                    return GameState.win
+                }
+            case .paper:
+                if opponentSign == .rock {
+                    return GameState.win
+                } else {
+                    return GameState.lost
+                }
+            case .scissors:
+                if opponentSign == .rock {
+                    return GameState.lost
+                } else {
+                    return GameState.win
+                }
+            }
         }
+        
     }
+    
 }

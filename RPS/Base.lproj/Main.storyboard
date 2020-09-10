@@ -85,7 +85,7 @@
                     <connections>
                         <outlet property="appSign" destination="b3n-n6-Qmg" id="3cC-iJ-615"/>
                         <outlet property="gameStatus" destination="0Ya-fU-nMS" id="95Y-iU-7XT"/>
-                        <outlet property="playAgainButton" destination="ORu-Ei-jvk" id="y7h-R3-YwQ"/>
+                        <outlet property="playAgain" destination="ORu-Ei-jvk" id="hhK-KU-pBF"/>
                         <outlet property="userChoicePaper" destination="b9E-eA-dKo" id="tiE-Qp-Zb5"/>
                         <outlet property="userChoiceRock" destination="aWw-PP-JVA" id="1mu-Lz-MMc"/>
                         <outlet property="userChoiceScissors" destination="8k9-0Z-3wP" id="6FT-jR-wN9"/>

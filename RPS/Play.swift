@@ -10,6 +10,5 @@ import Foundation
 
 func play(userChoice: Sign, computerChoice: Sign) -> GameState {
     
-    let result = userChoice.opponentsTurn(opponentSign: computerChoice)
-    return result
+    return userChoice.opponentsTurn(opponentSign: computerChoice)
 }
